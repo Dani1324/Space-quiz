@@ -106,7 +106,7 @@ body{
   z-index: -1;
 }
 
-.rad-design {
+.rad-design{
   width: 16px;
   height: 16px;
   border-radius: 100px;
@@ -114,7 +114,7 @@ body{
   position: relative;
 }
 
-.rad-design::before {
+.rad-design::before{
   content: '';
   display: inline-block;
   width: inherit;
@@ -125,11 +125,11 @@ body{
   transition: .3s;
 }
 
-.rad-input:checked+.rad-design::before {
+.rad-input:checked+.rad-design::before{
   transform: scale(0);
 }
 
-.rad-text {
+.rad-text{
   color: #788498;
   margin-left: 14px;
   font-size: 14px;
@@ -137,11 +137,11 @@ body{
   transition: .3s;
 }
 
-.rad-input:checked~.rad-text {
+.rad-input:checked~.rad-text{
   color: hsl(0, 0%, 40%);
 }
 
-.abs-site-link {
+.abs-site-link{
   position: fixed;
   bottom: 40px;
   left: 20px;
@@ -216,6 +216,11 @@ button:hover{
     font-size: 14px;
     margin: 10px 10px 15px 20px;
   }
+
+  .rad-text{ font-size: 13px;}
+  .rad-design{ width: 13px; height: 13px;}
+  .rad-design::before{ width: inherit; height: inherit; transform: translateY(-3px);}
+
 
   /* ! Button */
   button{

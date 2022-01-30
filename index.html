@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Fonts (Lato) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Lottie aniamtions -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Altre impostazioni del sito -->
+    <title>Space quiz | Daniele Ronchini </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="risorse/favicon.png">
+
+  </head>
+  <body>
+
+    <!-- Main card e contenuto -->
+    <div class="main-box">
+      <div class="section1">
+        <img src="risorse/logo.png" alt="">
+        <h1>Questionario sullo spazio</h1>
+        <h2>Testa le tue conoscenze in ambito astronomico!</h2>
+        <div class="result">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_BCXrjU.json" background="transparent" speed="1" style="width: 14%; margin: 7vh 43%;" autoplay></lottie-player>
+          <div class="answer">
+            <h3>Risposte corrette: </h3>
+            <h4 id="a-true">--</h4>
+          </div>
+          <div class="answer">
+            <h3>Risposte errate: </h3>
+            <h4 id="a-false">--</h4>
+          </div>
+          <div class="answer">
+            <h3>Percentuale risposte corrette: </h3>
+            <h4 id="a-percentage">--</h4>
+          </div>
+        </div>
+      </div>
+
+      <div id="separatory"></div>
+
+      <div class="section2">
+        <div class="questions">
+          <h2>Domande</h2>
+          <form>
+            <h5>Chi fu il primo scienziato ad osservare i crateri della luna?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question1" id="Q01A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">Copernico</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question1" id="Q01A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">Leonardo</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question1" id="Q01A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">Galileo</div>
+            </label>
+          </form>
+          <form>
+            <h5>Quante volte il sole è più grande della terra?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question2" id="Q02A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">100 Volte</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question2" id="Q02A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">1000 Volte</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question2" id="Q02A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">10000 Volte</div>
+            </label>
+          </form>
+          <form>
+            <h5>Quanti sono i pianeti del sistema solare?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question3" id="Q03A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">6</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question3" id="Q03A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">5</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question3" id="Q03A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">7</div>
+            </label>
+          </form>
+          <form>
+            <h5>Quanto impiega la luna per fare un giro intorno alla terra?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question4" id="Q04A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">30 giorni</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question4" id="Q04A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">29 giorni</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question4" id="Q04A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">31 giorni</div>
+            </label>
+          </form>
+          <form>
+            <h5>Cosa sono le stelle cadenti?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question5" id="Q05A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">Stelle che cadono vicino alla terra</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question5" id="Q05A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">Razzi spaziali</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question5" id="Q05A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">Frammenti di roccia</div>
+            </label>
+          </form>
+          <form>
+            <h5>Il razzo Saturno V è stato il più grande mai costruito, quanto era alto?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question6" id="Q06A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">10 metri</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question6" id="Q06A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">30 metri</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question6" id="Q06A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">Come un palazzo di 30 piani</div>
+            </label>
+          </form>
+          <form>
+            <h5>In quale secolo furono utilizzate per la prima volta le lenti per costruire strumenti di osservazione?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question7" id="Q07A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">1200</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question7" id="Q07A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">1600</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question7" id="Q07A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">1400</div>
+            </label>
+          </form>
+          <form>
+            <h5>Come si chiamano i gruppi di stelle?</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question8" id="Q08A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">Ammassi</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question8" id="Q08A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">Nebulose</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question8" id="Q08A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">Galassie</div>
+            </label>
+          </form>
+          <form>
+            <h5>Nello spazio gli uomini sono:</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question9" id="Q09A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">Più alti</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question9" id="Q09A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">Alti come nella Terra</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question9" id="Q09A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">Meno alti</div>
+            </label>
+          </form>
+          <form>
+            <h5>La navicella che arrivò sulla luna nel 1969 si chiamava:</h5>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question10" id="Q10A1">
+              <div class="rad-design"></div>
+              <div class="rad-text">Esploratore</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question10" id="Q10A2">
+              <div class="rad-design"></div>
+              <div class="rad-text">Luna</div>
+            </label>
+            <label class="rad-label">
+              <input type="radio" class="rad-input" name="question10" id="Q10A3">
+              <div class="rad-design"></div>
+              <div class="rad-text">Apollo</div>
+            </label>
+          </form>
+        </div>
+        <button onclick="calcolo()">CALCOLA IL TUO PUNTEGGIO</button>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>

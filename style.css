@@ -217,10 +217,9 @@ button:hover{
     margin: 10px 10px 15px 20px;
   }
 
-  .rad-label { margin: 4px 16px;}
+  .rad-label{ margin: 4px 16px;}
   .rad-text{ font-size: 13px;}
-  .rad-design{ width: 13px; height: 13px;}
-  .rad-design::before{ width: inherit; height: inherit; transform: translateY(-3px);}
+  
 
 
   /* ! Button */

@@ -11,11 +11,9 @@ body{
 
 /* ! Animations classes */
 #show-1{ display: block;}
-#hide-1{ display: none;}
-#hide-2{ display: none;}
-#show-2{ display: block;}
+#show-2{ display: none;}
+#show-3{ display: none;}
 
-#sad-animation{ display: none;}
 
 /* ! Main box */
 .main-box{

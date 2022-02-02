@@ -64,18 +64,18 @@ function calcolo() {
     errate = errate+1
   }
 
-  if(errate>5) {
-    $("#show-1").hide();
-    $("#hide-2").hide();
+  if(corrette>5) {
+    document.getElementById('show-1').style.display="none";
+    document.getElementById('show-2').style.display="block";
+    document.getElementById('show-3').style.display="none";
    }
   else{
-    $("#neutral-animation").hide();
-    $("#happy-animation").hide();
+    document.getElementById('show-1').style.display="none";
+    document.getElementById('show-2').style.display="none";
+    document.getElementById('show-3').style.display="block";
   }
 
   document.getElementById("a-true").innerHTML = corrette;
   document.getElementById("a-false").innerHTML = errate;
   document.getElementById("a-percentage").innerHTML = corrette/10*100+"%";
-
-
 }

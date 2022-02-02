@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Lottie aniamtions -->
+    <!-- Risorse -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- Altre impostazioni del sito -->
     <title>Space quiz | Daniele Ronchini </title>
@@ -27,7 +28,9 @@
         <h1>Questionario sullo spazio</h1>
         <h2>Testa le tue conoscenze in ambito astronomico!</h2>
         <div class="result">
-          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_BCXrjU.json" background="transparent" speed="1" style="width: 14%; margin: 7vh 43%;" autoplay></lottie-player>
+          <lottie-player id="show-1" id="hide-1" src="https://assets4.lottiefiles.com/private_files/lf30_3vNNXU.json"  background="transparent"  speed="0.7"  style="width: 14%; margin: 7vh 43%;  transform: scale(2.3);"  loop  autoplay></lottie-player>
+          <lottie-player id="hide-2" id="show-2" src="https://assets1.lottiefiles.com/packages/lf20_BCXrjU.json" background="transparent" speed="1" style="width: 14%; margin: 7vh 43%;" autoplay></lottie-player>
+          <lottie-player id="sad-animation" src="https://assets6.lottiefiles.com/packages/lf20_bdnjxekx.json"  background="transparent"  speed="1"  style="width: 14%; margin: 7vh 43%;"  loop  autoplay></lottie-player>
           <div class="answer">
             <h3>Risposte corrette: </h3>
             <h4 id="a-true">--</h4>

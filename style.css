@@ -9,6 +9,14 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
+/* ! Animations classes */
+#show-1{ display: block;}
+#hide-1{ display: none;}
+#hide-2{ display: none;}
+#show-2{ display: block;}
+
+#sad-animation{ display: none;}
+
 /* ! Main box */
 .main-box{
   width: 80vw;
@@ -219,7 +227,7 @@ button:hover{
 
   .rad-label{ margin: 4px 16px;}
   .rad-text{ font-size: 13px;}
-  
+
 
 
   /* ! Button */

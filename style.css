@@ -197,7 +197,7 @@ button:active{
     padding: 0 10%;
   }
 
-  .section1 h2{ padding: 0 10%;}
+  .section1 h2{ padding: 0 10%; font-size: 15px;}
   .result{ margin: 46px 28px; padding-bottom: 20px;}
   .result .answer h3{ font-size: 14px; margin: 10px 0px 5px 20px; width: 80%;}
   .result .answer h4 { margin: 10px 20px 5px 0;}

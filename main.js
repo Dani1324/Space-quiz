@@ -1,3 +1,4 @@
+// Quiz
 function calcolo() {
   var corrette = 0;
   var errate = 0;
@@ -79,3 +80,9 @@ function calcolo() {
   document.getElementById("a-false").innerHTML = errate;
   document.getElementById("a-percentage").innerHTML = corrette/10*100+"%";
 }
+
+// AOS animation library
+AOS.init({
+  offset: 300,
+  duration: 1100,
+});

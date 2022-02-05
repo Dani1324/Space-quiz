@@ -32,9 +32,11 @@
         <h1 data-aos="zoom-out">Questionario sullo spazio</h1>
         <h2 data-aos="fade-up" data-aos-duration="2000">Testa le tue conoscenze in ambito astronomico!</h2>
         <div class="result" data-aos="fade-in-out" data-aos-delay="2000" data-aos-offset="-100">
-          <lottie-player id="show-1" src="https://assets7.lottiefiles.com/packages/lf20_zxac4Y.json"  background="transparent"  speed="0.7"  style="width: 14%; margin: 7vh 43%;  transform: scale(3.2);"  loop  autoplay></lottie-player>
-          <lottie-player id="show-2" src="https://assets10.lottiefiles.com/packages/lf20_6aYlBl.json" background="transparent" speed="1" style="width: 14%; margin: 7vh 43%; transform: scale(3);" loop autoplay></lottie-player>
-          <lottie-player id="show-3" src="https://assets3.lottiefiles.com/private_files/lf30_glnkkfua.json"  background="transparent"  speed="1"  style="width: 14%; margin: 7vh 43%; transform: scale(2.2);" loop autoplay></lottie-player>
+          <div id="animations">
+            <lottie-player id="show-1" src="https://assets7.lottiefiles.com/packages/lf20_zxac4Y.json"  background="transparent"  speed="0.7"  style="width: 14%; margin: 7vh 43%;  transform: scale(3.2);"  loop  autoplay></lottie-player>
+            <lottie-player id="show-2" src="https://assets10.lottiefiles.com/packages/lf20_6aYlBl.json" background="transparent" speed="1" style="width: 14%; margin: 7vh 43%; transform: scale(3);" loop autoplay></lottie-player>
+            <lottie-player id="show-3" src="https://assets3.lottiefiles.com/private_files/lf30_glnkkfua.json"  background="transparent"  speed="1"  style="width: 14%; margin: 7vh 43%; transform: scale(2.2);" loop autoplay></lottie-player>
+          </div>
           <div class="answer">
             <h3>Risposte corrette: </h3>
             <h4 id="a-true">--</h4>
@@ -46,6 +48,10 @@
           <div class="answer">
             <h3>Percentuale risposte corrette: </h3>
             <h4 id="a-percentage">--</h4>
+          </div>
+          <div class="answer">
+            <h3>Percentuale risposte non date: </h3>
+            <h4 id="a-none">--</h4>
           </div>
         </div>
       </div>
@@ -60,17 +66,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question1" id="Q01A1">
               <div class="rad-design"></div>
-              <div class="rad-text">Copernico</div>
+              <div class="rad-text" id="Q01A1-text">Copernico</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question1" id="Q01A2">
               <div class="rad-design"></div>
-              <div class="rad-text">Leonardo</div>
+              <div class="rad-text" id="Q01A2-text">Leonardo</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question1" id="Q01A3">
               <div class="rad-design"></div>
-              <div class="rad-text">Galileo</div>
+              <div class="rad-text" id="Q01A3-text">Galileo</div>
             </label>
           </form>
           <form>
@@ -78,17 +84,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question2" id="Q02A1">
               <div class="rad-design"></div>
-              <div class="rad-text">100 Volte</div>
+              <div class="rad-text" id="Q02A1-text">100 Volte</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question2" id="Q02A2">
               <div class="rad-design"></div>
-              <div class="rad-text">1000 Volte</div>
+              <div class="rad-text" id="Q02A2-text">1000 Volte</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question2" id="Q02A3">
               <div class="rad-design"></div>
-              <div class="rad-text">10000 Volte</div>
+              <div class="rad-text" id="Q02A3-text">10000 Volte</div>
             </label>
           </form>
           <form>
@@ -96,17 +102,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question3" id="Q03A1">
               <div class="rad-design"></div>
-              <div class="rad-text">6</div>
+              <div class="rad-text" id="Q03A1-text">6</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question3" id="Q03A2">
               <div class="rad-design"></div>
-              <div class="rad-text">5</div>
+              <div class="rad-text" id="Q03A2-text">5</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question3" id="Q03A3">
               <div class="rad-design"></div>
-              <div class="rad-text">7</div>
+              <div class="rad-text" id="Q03A3-text">7</div>
             </label>
           </form>
           <form>
@@ -114,17 +120,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question4" id="Q04A1">
               <div class="rad-design"></div>
-              <div class="rad-text">30 giorni</div>
+              <div class="rad-text" id="Q04A1-text">30 giorni</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question4" id="Q04A2">
               <div class="rad-design"></div>
-              <div class="rad-text">29 giorni</div>
+              <div class="rad-text" id="Q04A2-text">29 giorni</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question4" id="Q04A3">
               <div class="rad-design"></div>
-              <div class="rad-text">31 giorni</div>
+              <div class="rad-text" id="Q04A3-text">31 giorni</div>
             </label>
           </form>
           <form>
@@ -132,17 +138,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question5" id="Q05A1">
               <div class="rad-design"></div>
-              <div class="rad-text">Stelle che cadono vicino alla terra</div>
+              <div class="rad-text" id="Q05A1-text">Stelle che cadono vicino alla terra</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question5" id="Q05A2">
               <div class="rad-design"></div>
-              <div class="rad-text">Razzi spaziali</div>
+              <div class="rad-text" id="Q05A2-text">Razzi spaziali</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question5" id="Q05A3">
               <div class="rad-design"></div>
-              <div class="rad-text">Frammenti di roccia</div>
+              <div class="rad-text" id="Q05A3-text">Frammenti di roccia</div>
             </label>
           </form>
           <form>
@@ -150,17 +156,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question6" id="Q06A1">
               <div class="rad-design"></div>
-              <div class="rad-text">10 metri</div>
+              <div class="rad-text" id="Q06A1-text">10 metri</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question6" id="Q06A2">
               <div class="rad-design"></div>
-              <div class="rad-text">30 metri</div>
+              <div class="rad-text" id="Q06A2-text">30 metri</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question6" id="Q06A3">
               <div class="rad-design"></div>
-              <div class="rad-text">Come un palazzo di 30 piani</div>
+              <div class="rad-text" id="Q06A3-text">Come un palazzo di 30 piani</div>
             </label>
           </form>
           <form>
@@ -168,17 +174,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question7" id="Q07A1">
               <div class="rad-design"></div>
-              <div class="rad-text">1200</div>
+              <div class="rad-text" id="Q07A1-text">1200</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question7" id="Q07A2">
               <div class="rad-design"></div>
-              <div class="rad-text">1600</div>
+              <div class="rad-text" id="Q07A2-text">1600</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question7" id="Q07A3">
               <div class="rad-design"></div>
-              <div class="rad-text">1400</div>
+              <div class="rad-text" id="Q07A3-text">1400</div>
             </label>
           </form>
           <form>
@@ -186,17 +192,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question8" id="Q08A1">
               <div class="rad-design"></div>
-              <div class="rad-text">Ammassi</div>
+              <div class="rad-text" id="Q08A1-text">Ammassi</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question8" id="Q08A2">
               <div class="rad-design"></div>
-              <div class="rad-text">Nebulose</div>
+              <div class="rad-text" id="Q08A2-text">Nebulose</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question8" id="Q08A3">
               <div class="rad-design"></div>
-              <div class="rad-text">Galassie</div>
+              <div class="rad-text" id="Q08A3-text">Galassie</div>
             </label>
           </form>
           <form>
@@ -204,17 +210,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question9" id="Q09A1">
               <div class="rad-design"></div>
-              <div class="rad-text">Più alti</div>
+              <div class="rad-text" id="Q09A1-text">Più alti</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question9" id="Q09A2">
               <div class="rad-design"></div>
-              <div class="rad-text">Alti come nella Terra</div>
+              <div class="rad-text" id="Q09A2-text">Alti come nella Terra</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question9" id="Q09A3">
               <div class="rad-design"></div>
-              <div class="rad-text">Meno alti</div>
+              <div class="rad-text" id="Q09A3-text">Meno alti</div>
             </label>
           </form>
           <form>
@@ -222,17 +228,17 @@
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question10" id="Q10A1">
               <div class="rad-design"></div>
-              <div class="rad-text">Esploratore</div>
+              <div class="rad-text" id="Q10A1-text">Esploratore</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question10" id="Q10A2">
               <div class="rad-design"></div>
-              <div class="rad-text">Luna</div>
+              <div class="rad-text" id="Q10A2-text">Luna</div>
             </label>
             <label class="rad-label">
               <input type="radio" class="rad-input" name="question10" id="Q10A3">
               <div class="rad-design"></div>
-              <div class="rad-text">Apollo</div>
+              <div class="rad-text" id="Q10A3-text">Apollo</div>
             </label>
           </form>
         </div>

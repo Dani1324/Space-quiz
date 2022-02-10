@@ -210,7 +210,7 @@ function calcolo() {
     document.getElementById('show-2').style.display="block";
     document.getElementById('show-3').style.display="none";
     document.getElementById('a-percentage').style.color='green';
-   }
+  }
   else{
     document.getElementById('show-1').style.display="none";
     document.getElementById('show-2').style.display="none";
@@ -222,6 +222,7 @@ function calcolo() {
   document.getElementById("a-false").innerHTML = errate;
   document.getElementById("a-none").innerHTML = nonrisposte;
   document.getElementById("a-percentage").innerHTML = corrette/10*100+"%";
+
 }
 
 // AOS animation library
